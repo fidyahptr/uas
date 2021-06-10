@@ -1,0 +1,24 @@
+table
+{
+    list-style-type: none;
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(229, 201, 233, 0.644);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    height: 100px;
+}
+        
+td.f {
+    border-style: solid;
+    border-color: white;
+}
+
+img.logo{
+    width: 35px;
+    height: 55px;
+}   

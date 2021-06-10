@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Main Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slide.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        h1 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 45pt;
+        background-color: rgba(137, 222, 255, 0.219);
+        border-style: solid;
+        border-color: white;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        vertical-align: middle;
+        padding: 40px 20px 40px;
+    }
+    </style>
+  </head>
+  <body style="background-color: rgba(247, 239, 255, 0.959);">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgba(71, 34, 80, 0.829);">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type of trip
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="dua.html">Mountain</a>
+                        <a class="dropdown-item" href="tiga.html">Beach</a>
+                        <a class="dropdown-item" href="empat.html">Land & Air</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#saran">Saran & Tanggapan</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+   
+    <div class="jumbotron h-auto" style="background-image: url(headpadar.jpg);">
+        <div class="container text-white text-center">
+                <h1>EXPLORE INDONESIA</h1>
+        </div>
+    </div>
+
+    <h2 class="text-center mt-4">Highlight</h2>
+
+    <div class="portfolio">
+        <div class="image active" style="background: url('bagus2.jpg') center/cover;"></div>
+        <div class="image" style="background: url('airterjun.jpg') center/cover;"></div>
+        <div class="image" style="background: url('header.jpg') center/cover;"></div>
+        <div class="image" style="background: url('kepri1.jpg') center/cover;"></div>
+        <div class="image" style="background: url('sel.jpg') center/cover;"></div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center my-3">
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="dua.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="tiga.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="empat.html">4</a></li>
+            <li class="page-item">
+                <a class="page-link" href="dua.html" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <div class="jumbotron jumbotron-fluid mt-5" style="background-color: rgb(173, 194, 233);">
+        <div class="row mx-4">
+            <div class="col" id="about">
+                <div id="about">
+                    <b>About us</b>  <br>
+                    Someone who want to explore Indonesia <br> 
+                    and show the hidden gem in Indonesia. <br>
+                    There are many beautiful place in Indonesia. <br> <br>
+                    <button class="btn btn-primary btn-ms" onclick="AboutMe()">More Information!</button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="Contact">
+                    <b>Contact : </b> <br>
+                    fidyahputri15@gmail.com <br>
+                    (0711) 310004 <br>
+                    <p id="demo" style="display:none">Jl. Masjid Al Gazali, Bukit Lama, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan 30128</p> <br>
+                    <button class="btn btn-primary btn-ms" onclick="moreContak()">More Contact!</button>
+                    <button class="btn btn-danger btn-ms" onclick="lessContact()">Done!</button>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="saran">
+                    <b>Saran dan Tanggapan</b>  <br>
+                    <textarea name="saran" id="saran" cols="28" rows="4"></textarea>
+                    <button class="btn btn-primary btn-ms" type="submit">Kirim!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-white text-center t-0" style="background-color: rgb(66, 34, 85);">
+        <div class="container pt-3">
+            &copy; 2020. | Designed by Fidyah Putri R
+        </div>
+    </footer>
+
+    <script src="slide.js"></script>
+    <script src="info.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
